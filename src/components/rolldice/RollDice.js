@@ -28,8 +28,8 @@ const RollDice = ({ sides }) => {
     <>
       <div className="roll-dice">
         <div className="rolldice-container">
-          <Dice face="one" />
-          <Dice face="three" />
+          <Dice face={dice1} rolling={rolling} />
+          <Dice face={dice2} rolling={rolling} />
         </div>
         <button onClick={roll} disabled={rolling}>
           {rolling ? "Rolling..." : "Roll Dice"}
